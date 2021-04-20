@@ -15,7 +15,7 @@ Data obtained from the [palmerpenguins library](https://github.com/allisonhorst/
 st.sidebar.header('User Input Features')
 
 st.sidebar.markdown("""
-[Example CSV input file](https://github.com/Shahrullo/Data-Science-Apps-with-Python-and-Streamlit/blob/main/8.%20Classification%20Penguins/penguins_cleaned.csv)
+[Example CSV input file](https://github.com/Shahrullo/Data-Science-Apps-with-Python-and-Streamlit/blob/main/8.%20Classification%20Penguins/example.csv)
 """)
 
 # Collects user input features into dataframe
@@ -63,3 +63,20 @@ if uploaded_file is not None:
     st.write(df)
 else:
     st.write('Awaiting CSV file to be uploaded. Currently using example input parameters (shown below).')
+    st.write(df)
+    
+    
+# read in save classification model
+load_clf = pickle.load(open('penguins_clf.pkl', 'rb'))
+
+# Apply model to make predictions
+prediction = load_clf.predict(df)
+prediction_proba = load_clf.predict_proba(df)
+
+
+st.subheader('Prediction')
+penguins_species = np.array(['Adelie', 'Chinstrap', 'Gentoo'])
+st.write(penguins_species[prediction])
+
+st.subheader('Prediction Probability')
+st.write(prediction_proba)
