@@ -1,1 +1,1 @@
-# Data-Science-Apps-with-Python-and-Streamlit
+# Data Science Apps with Python and Streamlit
