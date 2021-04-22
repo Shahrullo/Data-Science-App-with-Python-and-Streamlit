@@ -1,4 +1,4 @@
-# Data Science Apps with Python and Streamlit
+# Data Science Apps with Python and [Streamlit](https://streamlit.io/)
 
 The projects are created by the motivation of [Build 12 Data Science Apps with Python and Streamlit - Full Course by DataProfessor](https://www.youtube.com/watch?v=JwSS70SZdyM&ab_channel=freeCodeCamp.org)
 
