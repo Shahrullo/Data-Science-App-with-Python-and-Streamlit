@@ -4,4 +4,4 @@ The projects are created by the motivation of [Build 12 Data Science Apps with P
 
 Each project solves different problems and you can see them as webpage locally. 
 
-Just choose any model, download with folder and type in your command `streamlit run app.py`. 
+Just choose any model, download with folder and type in your command `$ streamlit run app.py`. 
